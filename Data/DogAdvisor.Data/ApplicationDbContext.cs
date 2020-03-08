@@ -26,6 +26,10 @@
 
         public DbSet<Setting> Settings { get; set; }
 
+        public DbSet<OfferCategory> OfferCategories { get; set; }
+
+        public DbSet<Offer> Offers { get; set; }
+
         public override int SaveChanges() => this.SaveChanges(true);
 
         public override int SaveChanges(bool acceptAllChangesOnSuccess)
