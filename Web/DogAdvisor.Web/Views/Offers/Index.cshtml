@@ -1,0 +1,12 @@
+﻿@model DogAdvisor.Web.ViewModels.Offers.OffersListViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+@foreach (var offer in Model.Offers)
+{
+    <a>@offer.Facility</a>
+}
+
