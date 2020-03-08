@@ -1,12 +1,12 @@
-﻿using DogAdvisor.Data.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DogAdvisor.Data.Seeding
+﻿namespace DogAdvisor.Data.Seeding
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+
+    using DogAdvisor.Data.Models;
+
     public class OfferCategoriesSeeder : ISeeder
     {
         public async Task SeedAsync(ApplicationDbContext dbContext, IServiceProvider serviceProvider)
@@ -16,8 +16,7 @@ namespace DogAdvisor.Data.Seeding
                 return;
             }
 
-            var categories = new List<string> 
-            {
+            var categories = new List<string> {
                 "Accommodation",
                 "Family attractions",
                 "Good for walks",
