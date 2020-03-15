@@ -29,6 +29,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Data\DogAdvisor.Data\DogAdvisor.Data.csproj" />
     <ProjectReference Include="..\..\Services\DogAdvisor.Services.Data\DogAdvisor.Services.Data.csproj" />
+    <ProjectReference Include="..\..\Web\DogAdvisor.Web.ViewModels\DogAdvisor.Web.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>
