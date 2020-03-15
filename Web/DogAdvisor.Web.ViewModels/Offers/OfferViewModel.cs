@@ -1,6 +1,9 @@
 ﻿namespace DogAdvisor.Web.ViewModels.Offers
 {
-    public class OfferViewModel
+    using DogAdvisor.Data.Models;
+    using DogAdvisor.Services.Mapping;
+
+    public class OfferViewModel : IMapFrom<Offer>
     {
         public string City { get; set; }
 

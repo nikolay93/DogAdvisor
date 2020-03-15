@@ -11,7 +11,6 @@
     {
         private IRepository<Offer> OfferRepository { get; }
 
-
         public OffersService(IRepository<Offer> offerRepository)
         {
             this.OfferRepository = offerRepository;
@@ -20,10 +19,10 @@
         public List<T> GetByCategory<T>(int categoryId)
         {
             var offers = this.OfferRepository
-                .All()
-                .Where(x => x.CategoryId == categoryId)
-                .To<T>()
-                .ToList();
+            .All()
+            .Where(x => x.CategoryId == categoryId)
+            .To<T>()
+            .ToList();
 
             return offers;
         }

@@ -3,6 +3,11 @@
     ViewData["Title"] = "Index";
 }
 
+<form method="get" asp-controller="Offers" asp-action="Index">
+    <select asp-for="@Model.CategoryId" asp-items="@Model.Categories"></select>
+    <input type="submit" />
+</form>
+
 <h1>Index</h1>
 
 @foreach (var offer in Model.Offers)
